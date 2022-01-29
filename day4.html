@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Day four </h1>
+    <h2>Fing the largest number using if else  </h2>
+    
+   
+
+<script>
+
+
+    document.write("<br>")
+    var num1 = prompt("Enter First number ");
+    var num2 = prompt("Enter Second number ");
+    var num3 = prompt("Enter Third number ");
+    var num1 = Number(num1);
+    var num2 = Number(num2);
+    var num3 = Number(num3);
+    document.write(num1+ "<br>");
+    document.write(num2+ "<br>");
+    document.write(num3+ "<br>");
+    if(num1>num2 && num1>num3){
+        console.log("First number is bigger");
+        document.write("First number is bigger " +num1);
+    }
+    else if(num1<num2 && num2>num3){
+        console.log("Second number is larger");
+        document.write("Second number is bigger " +num2);
+    }
+    else{
+        console.log("Third number is larger");
+        document.write("Third number is bigger " + num3);
+    }
+
+</script>
+
+
+</body>
+</html>
