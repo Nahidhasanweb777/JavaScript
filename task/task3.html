@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>find even & odd number into a range </h2>
+
+
+
+<script>
+
+var a = prompt("Enter first number ");
+a = Number(a);
+var b = prompt("Enter last number ");
+b = Number(b);
+
+var even = function range(a,b){
+  for(a ; a <= b ; a++)
+  {
+    if(a%2==0)
+    {
+      document.write (a + "  This number is even<br>");
+    }
+    
+  }
+}
+
+var odd = function range1(a,b){
+  for(a ; a <=b ; a++)
+  {
+    if(a%2==1)
+    {
+      document.write (a + "  This number is odd<br>");
+    }
+    
+  }
+
+}
+
+document.write("<h1>All Even Number</h1>");
+even(a,b);
+document.write("<h1>All Odd Number</h1>");
+odd(a,b);
+</script>
+
+</body>
+</html>
