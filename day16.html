@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<h2> Adding function into a constructor </h2>
+<h2 style="color: red;"> note: constructor name Always starting with capital variable </h2>
+<h4>A constructor is a special function that
+     creates and initializes an object instance <br>
+     of a class. In JavaScript, a constructor gets
+      called when an object is created using the new keyword.<br> The purpose of 
+      a constructor is to create a new object and set values <br>for any existing object properties</h4>
+
+<script>
+
+function StudentInfo(name,age,id,place){
+    this.name = name;
+    this.age = age;
+    this.id = id;
+    this.place = place;
+
+    this.display = function(){
+       document.write(this.name + "<br>");
+       document.write(this.age + "<br>");
+       document.write(this.id + "<br>");
+       document.write(this.place + "<br>"); 
+    }
+
+}
+ var student = new StudentInfo("nahid","23","173462096","dhaka");
+ var student1 = new StudentInfo("hasan","23","173462096","dhaka");
+ var student2 = new StudentInfo("tanzila","23","173462096","dhaka");
+student.display();
+student1.display();
+student2.display();
+</script>
+
+</body>
+</html>
