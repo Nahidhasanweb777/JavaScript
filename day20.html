@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<h2> DOM  object </h2>
+<h2 style="color: red;"> Note: if use qurey selector  then for ID use #IdName ,for tag use tag name <br>
+for class use .className </h2>
+<h4>The document and window objects are the objects whose interfaces you generally <br>use most often in DOM programming. In simple terms, the window object represents something like the browser, <br>and the document object is the root of the document itself.</h4>
+<h1>Hello world</h1>
+<p id ="pra"></p>
+<p id="demo"></p>
+
+
+<input type="text" id="myText" value="nahid hasan ">
+<img id="image" src="">
+<h3></h3>
+<script>
+document.querySelector("h1").innerHTML="qurey selector";
+document.getElementById("pra").innerHTML = "Select by ID";
+document.getElementsByTagName("h3").innerHTML = "select by tag name";
+document.getElementById("demo").style.color = "red";
+document.getElementById("myText").value = "Tanzila hasan";
+document.getElementById("image").src = "img/1.jpg";
+</script>
+
+</body>
+</html>
