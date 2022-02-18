@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<h2> add new tag using javaScript </h2>
+
+<div id="heroSection">
+    <h1>heading 1</h1>
+    <h2>heading 2</h2>
+
+</div>
+
+<button onclick="a();"> ABC </button>
+<script>
+
+   var create = document.createElement("h3");
+   var text = document.createTextNode("heading 3");
+   create.appendChild(text);
+   var adder = document.getElementById("heroSection");
+   adder.appendChild(create);
+
+function a(){
+    document.write("ABCDEFGHIJK");
+}
+</script>
+
+</body>
+</html>
