@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<h2>JavaScript Validation using DOM(Document object Model)</h2>
+
+<form name="myForm" action="#" onsubmit="return validForm()" method="post">
+  Name: <input type="text" name="fname">
+  <input type="submit" value="Submit">
+</form>
+
+
+
+
+<script>
+    function validForm() {
+      let x = document.forms["myForm"]["fname"].value;
+      if (!x == true) {
+        alert("Name must be enter the value");
+        return false;
+      }
+    }
+    </script>
+</body>
+</html>

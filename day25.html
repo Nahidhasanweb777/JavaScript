@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body id ="body">
+
+<h2>How to make thems </h2>
+
+<form name="myForm" action="#" onsubmit="validForm()" method="post">
+  Name: <input type="text" name="fname">
+  <input type="submit" value="Submit">
+</form>
+
+<br>
+
+<h1 id ="header1">Chilck to change  color</h1>
+<button type="button" onclick="colorChange1();">
+Click Me for red color!</button>
+
+<button type="button" onclick="colorChange2();">
+  Click Me for green color!</button>
+<script>
+
+
+function colorChange1()
+{
+  
+document.getElementById("body").style. background = "red";
+document.getElementById("header1").style.color = "green";
+}
+
+function colorChange2()
+{
+document.getElementById("body").style.backgroundColor = "green";
+document.getElementById("header1").style.color = "red";
+}
+</script>
+
+<script>
+    function validForm() {
+      let x = document.forms["myForm"]["fname"].value;
+      if (x >1 && x<11) {
+        document.write("Input ok");
+      
+      }
+      else {
+        document.write("Input not ok");
+      }
+    }
+
+
+    
+    </script>
+</body>
+</html>

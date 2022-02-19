@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<h2> delete tag using DOM Manipulation javaScript </h2>
+
+<div id="heroSection">
+    <h1>heading 1</h1>
+    <h2>heading 2</h2>
+
+</div>
+
+<button onclick="a();"> ABC </button>
+<script>
+
+   var myDiv = document.getElementById("heroSection");
+   var dtag = document.getElementsByTagName("h2")[0];
+   myDiv.removeChild(dtag);
+
+function a(){
+    document.write("ABCDEFGHIJK");
+}
+</script>
+
+</body>
+</html>
