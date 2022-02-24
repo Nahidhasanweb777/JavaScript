@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body id ="body">
+<p>Required.
+  The event name.
+  Do not use the "on" prefix.
+  Use "click" instead of "onclick".
+  </p>
+  <h2><a href="#">Evenlister click</a> </h2>
+  <h2>Evenlister mousedown  </h2>
+  <h2>Evenlister mousemove  </h2>
+  <h2><a href="#">Evenlister dblclick</a>  </h2>
+  <h2>Evenlister mousedown  </h2>
+  <h2>Evenlister mousedown  </h2>
+  <h2>Evenlister mousedown  </h2>
+
+
+
+<br>
+
+
+<script>
+document.getElementsByTagName("h2")[0].addEventListener("click",colorChange1);
+document.getElementsByTagName("h2")[1].addEventListener("mousedown",colorChange2);
+document.getElementsByTagName("h2")[2].addEventListener("mousemove",colorChange2);
+document.getElementsByTagName("h2")[1].addEventListener("dblclick",colorChange3);
+// document.getElementsByTagName("h2")[1].addEventListener("mousedown",colorChange2);
+// document.getElementsByTagName("h2")[1].addEventListener("mousedown",colorChange2);
+function colorChange1()
+{
+  
+this.style. background = "red";
+document.getElementById("header1").style.color = "green";
+}
+
+function colorChange2()
+{
+document.getElementById("body").style.backgroundColor = "yellow";
+document.getElementById("header1").style.color = "red";
+}
+function colorChange3()
+{
+document.getElementById("body").style.backgroundColor = "blue";
+document.getElementById("header1").style.color = "red";
+}
+</script>
+
+<script>
+    function validForm() {
+      let x = document.forms["myForm"]["fname"].value;
+      if (x >1 && x<11) {
+        document.write("Input ok");
+      
+      }
+      else {
+        document.write("Input not ok");
+      }
+    }
+
+
+    
+    </script>
+</body>
+</html>
